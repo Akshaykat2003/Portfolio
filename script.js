@@ -4,3 +4,10 @@ function toggleMenu() {
   menu.classList.toggle("open");
   icon.classList.toggle("open");
 }
+document.addEventListener("DOMContentLoaded", function() {
+  const animatedElements = document.querySelectorAll(".animated");
+
+  animatedElements.forEach(function(element) {
+    element.classList.add("show");
+  });
+});
